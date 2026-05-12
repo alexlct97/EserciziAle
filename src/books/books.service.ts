@@ -3,6 +3,7 @@ import { PrismaService } from '../prisma/prisma.service';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 
+// Utilizzo del pattern Dependency injection
 @Injectable()
 export class BooksService {
   constructor(private prisma: PrismaService) {}
